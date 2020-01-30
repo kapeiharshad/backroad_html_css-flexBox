@@ -1,7 +1,71 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins&display=swap");
 
-body {
-  background: red;
-  font-family: "Lato", sans-serif;
-  font-family: "Poppins", sans-serif;
+/* -------------------- global css started --------------------- */
+
+:root {
+  --primaryColor: #3fd0d4;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ecececec;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.25rem;
+  --lightShadow: 2px 5px 3px 0 rgba(0, 0, 0, 0.25);
+  --darkShadow: 4px 10px 5px 0 rgba(0, 0, 0, 0.5);
 }
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: var(--mainBlack);
+  background: var(--offWhite);
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.25rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+h1 {
+  font-size: 3.3rem;
+}
+h2 {
+  font-size: 2.3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  line-height: 2;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+}
+
+/* -------------------- end global css started --------------------- */
