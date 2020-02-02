@@ -67,5 +67,62 @@ p {
 a {
   text-decoration: none;
 }
+.btn-white{
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
+  padding: 0.9rem 2rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.btn-white:hover{
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+}
 
-/* -------------------- end global css started --------------------- */
+/* -------------------- end global css --------------------- */
+
+/* -------------------- start of  header css --------------------- */
+/* -------------------- start of  hero css --------------------- */
+
+.hero{
+  min-height: 100vh;
+  background: var(--primaryColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem 
+}
+.hero-banner{
+  text-align: center;
+  color: var(--mainWhite);
+}
+.hero-title{
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  letter-spacing: 0.4rem;
+}
+.hero-text{
+  width: 85%;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  letter-spacing: var(--mainSpacing);
+}
+@media screen and (min-width:768px){
+.hero{
+  background:linear-gradient(rgba(63,208,212,0.7),rgba(0,0,0,0.7)), url("../image/bannerImage.jpg") center/cover no-repeat fixed;
+}
+.hero-title{
+  font-size: 4.5rem;
+}
+.hero-text{
+  width: 70%;
+}
+}
+/* -------------------- end of  hero css --------------------- */
+/* -------------------- end of  header css --------------------- */
+
+
