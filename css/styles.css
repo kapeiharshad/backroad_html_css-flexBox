@@ -66,11 +66,12 @@ p {
 }
 a {
   text-decoration: none;
+  display: inline-block;
 }
 .section-center{
   width:85vw;
   max-width: 1170px;
-  margin:4rem auto 2rem auto;
+  margin:3rem auto 2rem auto;
 }
 .btn-white{
   text-transform: uppercase;
@@ -84,6 +85,20 @@ a {
 }
 .btn-white:hover{
   background: var(--mainWhite);
+  color: var(--primaryColor);
+}
+.btn-primary{
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  letter-spacing: var(--mainSpacing);
+  border: 2px solid var(--primaryColor);
+  background: var(--primaryColor);
+  padding: 0.9rem 1.6rem;
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+.btn-primary:hover{
+  background: transparent;
   color: var(--primaryColor);
 }
 
@@ -128,6 +143,9 @@ a {
 }
 }
 /* -------------------- end of  hero css --------------------- */
+/* -------------------- end of  header css --------------------- */
+
+/* -------------------- start of  about css --------------------- */
 .about{
   background: var(--mainWhite);
 }
@@ -139,15 +157,48 @@ a {
 .title{
   font-size: 2.5rem;
   letter-spacing: 0.5rem;
+  font-weight: bold;
 }
 .subtitle{
-  color: var(--primaryColor)
+  color: var(--primaryColor);
 }
 .about-info {
   margin-top:2rem ;
 }
-
+@media screen and (min-width:870px){
+  .about-center{
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-img,.about-info {
+    flex: 0 0 calc(50% - 2rem);
+    margin-bottom: 0;
+    margin-top:0;
+  }
+  .about-info{
+    align-self: center;
+  }
+}
+@media screen and (min-width:1170px) {
+  .about-img::before{
+    content: "";
+    position: absolute;
+    top: -1.25rem;
+    left: -1.25rem;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--primaryColor);
+  }
+  .about-img{
+    position: relative;
+  }
+  .about-photo{
+    position: relative;
+  }
+}
 /* -------------------- end of  header css --------------------- */
+
+
 
 
 
