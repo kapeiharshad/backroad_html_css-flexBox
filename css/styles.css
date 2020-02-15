@@ -252,6 +252,63 @@ a {
 
 /* -------------------- end of  service css --------------------- */
 
+/* -------------------- start of  featured css --------------------- */
+
+.features{
+  background: var(--mainWhite);
+}
+.single-features{
+  box-shadow: var(--lightShadow);
+  margin:2rem 0;
+}
+.single-features:hover{
+  box-shadow: var(--darkShadow);
+}
+.feature-country{
+  color: var(--primaryColor);
+  font-weight: bold;
+}
+.feature-sub_info{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.feature-img-container{
+  position: relative;
+}
+.feature-date{
+  position: absolute;
+  top:0;
+  padding:2px 10px 0 10px;
+  background: var(--primaryColor);
+  text-transform: capitalize;
+  color: var(--mainWhite);
+  font-weight: bold;
+}
+.feature-link{
+  text-align: center;
+}
+
+@media screen and (min-width:768px){
+.features-center{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.single-features{
+  flex: 0 0 calc(50% - 2rem);
+}
+}
+
+@media screen and (min-width: 1170px){
+  .single-features{
+    flex: 0 0 calc(33.33% - 1rem);
+  }
+  }
+/* -------------------- end of  featured css --------------------- */
+
+
+
 
 
 
