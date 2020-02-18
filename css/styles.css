@@ -319,10 +319,10 @@ a {
   margin:2rem 0;
 }
 .galleries-center{
-  padding-top:3rem;
+  padding-top:2rem;
 }
 
-@media screen and (min-width:678px){
+@media screen and (min-width:475px){
 .galleries-center{
   display: flex;
   flex-wrap: wrap;
@@ -331,16 +331,21 @@ a {
   flex :0 0 calc(50%)
 }
 }
-
-@media screen and (min-width:950px){
+@media screen and (min-width:678px){
   .single-gallery{
     flex :0 0 calc(33.33%)
   }
   }
 
+@media screen and (min-width:950px){
+  .single-gallery{
+    flex :0 0 calc(25%)
+  }
+  }
+
 @media screen and (min-width:1250px){
   .single-gallery{
-    flex :0 0 calc(15%)
+    flex :0 0 calc(20%)
   }
   }
 
