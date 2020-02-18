@@ -311,6 +311,43 @@ a {
   }
 /* -------------------- end of  featured css --------------------- */
 
+/* -------------------- start of  gallery css --------------------- */
+
+/* -------------------- end of  featured css --------------------- */
+.galleries{
+  background: var(--darkGrey);
+  margin:2rem 0;
+}
+.galleries-center{
+  padding-top:3rem;
+}
+
+@media screen and (min-width:678px){
+.galleries-center{
+  display: flex;
+  flex-wrap: wrap;
+}
+.single-gallery{
+  flex :0 0 calc(50%)
+}
+}
+
+@media screen and (min-width:950px){
+  .single-gallery{
+    flex :0 0 calc(33.33%)
+  }
+  }
+
+@media screen and (min-width:1250px){
+  .single-gallery{
+    flex :0 0 calc(15%)
+  }
+  }
+
+/* -------------------- end of  gallery css --------------------- */
+
+
+
 
 
 
