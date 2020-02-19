@@ -321,6 +321,17 @@ a {
 .galleries-center{
   padding-top:2rem;
 }
+.gallery-img{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:linear-gradient(rgba(63,208,212,0.4),rgba(63,208,212,0.4));
+}
+.gallery-img:hover .gallery-icon{
+  position: absolute;
+  font-size: 2.5rem;
+}
 
 @media screen and (min-width:475px){
 .galleries-center{
