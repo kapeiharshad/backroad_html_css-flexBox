@@ -414,3 +414,21 @@ input[type="email"] {
   transition: var(--mainTransition);
 }
 /* ---------------------end of hot deal------------------------ */
+
+/* ---------------------start of footer------------------------ */
+.footer {
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+  text-align: center;
+  padding: 2rem;
+  line-height: 2.5rem;
+}
+.footer-single-option {
+  font-style: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
+.footer-single-icon {
+  margin-right: 1rem;
+}
+
+/* ---------------------end of footer------------------------ */
