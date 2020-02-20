@@ -68,12 +68,12 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-.section-center{
-  width:85vw;
+.section-center {
+  width: 85vw;
   max-width: 1170px;
-  margin:4rem auto 2rem auto;
+  margin: 4rem auto 2rem auto;
 }
-.btn-white{
+.btn-white {
   text-transform: uppercase;
   letter-spacing: var(--mainSpacing);
   color: var(--mainWhite);
@@ -83,11 +83,11 @@ a {
   transition: var(--mainTransition);
   cursor: pointer;
 }
-.btn-white:hover{
+.btn-white:hover {
   background: var(--mainWhite);
   color: var(--primaryColor);
 }
-.btn-primary{
+.btn-primary {
   text-transform: uppercase;
   color: var(--mainWhite);
   letter-spacing: var(--mainSpacing);
@@ -97,7 +97,7 @@ a {
   transition: var(--mainTransition);
   cursor: pointer;
 }
-.btn-primary:hover{
+.btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
 }
@@ -107,79 +107,81 @@ a {
 /* -------------------- start of  header css --------------------- */
 /* -------------------- start of  hero css --------------------- */
 
-.hero{
+.hero {
   min-height: 100vh;
   background: var(--primaryColor);
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem 
+  padding: 0 2rem;
 }
-.hero-banner{
+.hero-banner {
   text-align: center;
   color: var(--mainWhite);
 }
-.hero-title{
+.hero-title {
   text-transform: uppercase;
   margin-bottom: 2rem;
   letter-spacing: 0.4rem;
 }
-.hero-text{
+.hero-text {
   width: 85%;
   font-weight: 400;
   margin: 0 auto;
   margin-bottom: 4rem;
   letter-spacing: var(--mainSpacing);
 }
-@media screen and (min-width:768px){
-.hero{
-  background:linear-gradient(rgba(63,208,212,0.7),rgba(0,0,0,0.7)), url("../image/bannerImage.jpg") center/cover no-repeat fixed;
-}
-.hero-title{
-  font-size: 4.5rem;
-}
-.hero-text{
-  width: 70%;
-}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../image/bannerImage.jpg") center/cover no-repeat fixed;
+  }
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  .hero-text {
+    width: 70%;
+  }
 }
 /* -------------------- end of  hero css --------------------- */
 /* -------------------- end of  header css --------------------- */
 
 /* -------------------- start of  about css --------------------- */
-.about{
+.about {
   background: var(--mainWhite);
 }
-.title-wrapper{
+.title-wrapper {
   padding-top: 3rem;
   text-align: center;
   text-transform: uppercase;
 }
-.title{
+.title {
   letter-spacing: 0.5rem;
   font-weight: bold;
 }
-.subtitle{
+.subtitle {
   color: var(--primaryColor);
 }
 .about-info {
-  margin-top:2rem ;
+  margin-top: 2rem;
 }
-@media screen and (min-width:870px){
-  .about-center{
+@media screen and (min-width: 870px) {
+  .about-center {
     display: flex;
     justify-content: space-between;
   }
-  .about-img,.about-info {
+  .about-img,
+  .about-info {
     flex: 0 0 calc(50% - 2rem);
     margin-bottom: 0;
-    margin-top:0;
+    margin-top: 0;
   }
-  .about-info{
+  .about-info {
     align-self: center;
   }
 }
-@media screen and (min-width:1170px) {
-  .about-img::before{
+@media screen and (min-width: 1170px) {
+  .about-img::before {
     content: "";
     position: absolute;
     top: -1.25rem;
@@ -188,10 +190,10 @@ a {
     height: 100%;
     border: 5px solid var(--primaryColor);
   }
-  .about-img{
+  .about-img {
     position: relative;
   }
-  .about-photo{
+  .about-photo {
     position: relative;
   }
 }
@@ -199,176 +201,173 @@ a {
 
 /* -------------------- start of  service css --------------------- */
 
-.service{
+.service {
   background: var(--mainGrey);
 }
-.service-single{
+.service-single {
   text-align: center;
   margin-bottom: 2rem;
 }
-.service-title{
+.service-title {
   text-transform: uppercase;
   margin-top: 1rem;
 }
-.service-icon{
+.service-icon {
   font-size: 1.2rem;
   background: var(--primaryColor);
   padding: 8px;
   display: inline;
 }
 
-@media screen and (min-width:768px){
-  .service-center{
-    display:flex;
+@media screen and (min-width: 768px) {
+  .service-center {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  .service-single{
-    flex:0 1 calc(50% - 1rem);
+  .service-single {
+    flex: 0 1 calc(50% - 1rem);
     display: flex;
     justify-content: space-between;
     text-align: left;
     margin-bottom: 2rem;
   }
   .service-info {
-    margin-left:1rem;
+    margin-left: 1rem;
     align-self: center;
   }
   .service-icon {
-   align-self: flex-start;
- }
-  .service-title{
-   margin-top: 0;
- }
- }
-
-@media screen and (min-width:1170px){
- .service-single{
-   flex:0 0 calc(33.33% - 1rem);
-   margin-bottom: 0;
- }
+    align-self: flex-start;
+  }
+  .service-title {
+    margin-top: 0;
+  }
 }
 
+@media screen and (min-width: 1170px) {
+  .service-single {
+    flex: 0 0 calc(33.33% - 1rem);
+    margin-bottom: 0;
+  }
+}
 
 /* -------------------- end of  service css --------------------- */
 
 /* -------------------- start of  featured css --------------------- */
 
-.features{
+.features {
   background: var(--mainWhite);
 }
-.single-features{
+.single-features {
   box-shadow: var(--lightShadow);
-  margin:2rem 0;
+  margin: 2rem 0;
 }
-.single-features:hover{
+.single-features:hover {
   box-shadow: var(--darkShadow);
 }
-.feature-title{
+.feature-title {
   padding-left: 0.5rem;
   margin-top: 0.5rem;
   text-transform: capitalize;
 }
-.feature-country{
+.feature-country {
   color: var(--primaryColor);
   font-weight: bold;
 }
-.feature-sub_info{
+.feature-sub_info {
   display: flex;
   justify-content: space-between;
   padding: 0 1.5rem;
 }
-.feature-img-container{
+.feature-img-container {
   position: relative;
 }
-.feature-date{
+.feature-date {
   position: absolute;
-  top:0;
-  padding:2px 10px 0 10px;
+  top: 0;
+  padding: 2px 10px 0 10px;
   background: var(--primaryColor);
   text-transform: capitalize;
   color: var(--mainWhite);
   font-weight: bold;
 }
-.feature-link{
+.feature-link {
   text-align: center;
 }
 
-@media screen and (min-width:768px){
-.features-center{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+@media screen and (min-width: 768px) {
+  .features-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .single-features {
+    flex: 0 0 calc(50% - 2rem);
+  }
 }
-.single-features{
-  flex: 0 0 calc(50% - 2rem);
-}
-}
-@media screen and (min-width: 1170px){
-  .single-features{
+@media screen and (min-width: 1170px) {
+  .single-features {
     flex: 0 0 calc(33.33% - 1rem);
   }
-  }
+}
 /* -------------------- end of  featured css --------------------- */
 
 /* -------------------- start of  gallery css --------------------- */
 
 /* -------------------- end of  featured css --------------------- */
-.galleries{
+.galleries {
   background: var(--darkGrey);
-  margin:2rem 0;
+  margin: 2rem 0;
 }
-.galleries-center{
-  padding-top:2rem;
+.galleries-center {
+  padding-top: 2rem;
 }
-.gallery-img{
+.gallery-img {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background:linear-gradient(rgba(63,208,212,0.4),rgba(63,208,212,0.4));
+  background: var(--primaryColor);
 }
-.gallery-img:hover .gallery-icon{
+.gallery-icon {
   position: absolute;
   font-size: 2.5rem;
+  color: var(--mainWhite);
+  opacity: 0;
+  transition: var(--mainTransition);
+}
+.gallery-img:hover .gallery-photo {
+  opacity: 0.5;
+}
+.gallery-img:hover .gallery-icon {
+  opacity: 1;
 }
 
-@media screen and (min-width:475px){
-.galleries-center{
-  display: flex;
-  flex-wrap: wrap;
-}
-.single-gallery{
-  flex :0 0 calc(50%)
-}
-}
-@media screen and (min-width:678px){
-  .single-gallery{
-    flex :0 0 calc(33.33%)
+@media screen and (min-width: 475px) {
+  .galleries-center {
+    display: flex;
+    flex-wrap: wrap;
   }
+  .single-gallery {
+    flex: 0 0 calc(50%);
   }
+}
+@media screen and (min-width: 678px) {
+  .single-gallery {
+    flex: 0 0 calc(33.33%);
+  }
+}
 
-@media screen and (min-width:950px){
-  .single-gallery{
-    flex :0 0 calc(25%)
+@media screen and (min-width: 950px) {
+  .single-gallery {
+    flex: 0 0 calc(25%);
   }
-  }
+}
 
-@media screen and (min-width:1250px){
-  .single-gallery{
-    flex :0 0 calc(20%)
+@media screen and (min-width: 1250px) {
+  .single-gallery {
+    flex: 0 0 calc(20%);
   }
-  }
+}
 
 /* -------------------- end of  gallery css --------------------- */
-
-
-
-
-
-
-
-
-
-
-
