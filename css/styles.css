@@ -100,16 +100,6 @@ a {
   background: transparent;
   color: var(--primaryColor);
 }
-.submit-btn {
-  padding: 0.5rem 1rem;
-  background: var(--primaryColor);
-  color: var(--mainWhite);
-  letter-spacing: 3px;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  border: var(--primaryColor) solid 2px;
-  cursor: pointer;
-}
 
 /* -------------------- end global css --------------------- */
 
@@ -405,5 +395,22 @@ input[type="email"] {
   padding-left: 0.5rem;
   font-size: 0.7rem;
   font-weight: bold;
+  outline: none;
+}
+.submit-btn {
+  padding: 0.5rem 1rem;
+  background: var(--mainWhite);
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  border: var(--primaryColor) solid 2px;
+  cursor: pointer;
+  border-left: none;
+}
+.submit-btn:hover {
+  color: var(--mainWhite);
+  background: var(--primaryColor);
+  transition: var(--mainTransition);
 }
 /* ---------------------end of hot deal------------------------ */
