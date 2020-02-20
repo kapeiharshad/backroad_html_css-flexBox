@@ -26,7 +26,6 @@
 body {
   font-family: "Lato", sans-serif;
   color: var(--mainBlack);
-  background: var(--offWhite);
   line-height: 1.4;
   font-size: 1rem;
 }
@@ -100,6 +99,16 @@ a {
 .btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
+}
+.submit-btn {
+  padding: 0.5rem 1rem;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  letter-spacing: 3px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  border: var(--primaryColor) solid 2px;
+  cursor: pointer;
 }
 
 /* -------------------- end global css --------------------- */
@@ -371,3 +380,30 @@ a {
 }
 
 /* -------------------- end of  gallery css --------------------- */
+
+/* ---------------------start of hot deal------------------------ */
+.hot-deal {
+  background: var(--mainWhite);
+}
+.hot-deal-form {
+  display: flex;
+  justify-content: center;
+}
+.hot-deal-input {
+  border: var(--primaryColor) solid 2px;
+  flex-grow: 0.5;
+}
+.hot-deal-input::placeholder {
+  text-align: left;
+  color: var(--mainBlack);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+input[type="email"] {
+  text-align: left;
+  color: var(--mainBlack);
+  padding-left: 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+/* ---------------------end of hot deal------------------------ */
