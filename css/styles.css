@@ -2,6 +2,10 @@
 
 /* -------------------- global css started --------------------- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primaryColor: #3fd0d4;
   --mainWhite: #fff;
@@ -104,6 +108,35 @@ a {
 /* -------------------- end global css --------------------- */
 
 /* -------------------- start of  header css --------------------- */
+
+/* -------------------- start of  nav css --------------------- */
+
+.nav {
+  position:relative;
+  z-index: 1;
+}
+.nav-container{
+  background: rgb(221, 221, 221,0.8);
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+.nav-text {
+  display: inline-block;
+  margin: 0 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: var(--mainBlack);
+}
+.nav-text:hover{
+  color:var(--primaryColor);
+  text-decoration: underline;
+}
+
+/* -------------------- end of  nav css --------------------- */
+
+
 /* -------------------- start of  hero css --------------------- */
 
 .hero {
@@ -312,8 +345,6 @@ a {
 /* -------------------- end of  featured css --------------------- */
 
 /* -------------------- start of  gallery css --------------------- */
-
-/* -------------------- end of  featured css --------------------- */
 .galleries {
   background: var(--darkGrey);
   margin: 2rem 0;
