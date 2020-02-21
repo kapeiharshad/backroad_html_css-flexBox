@@ -426,9 +426,32 @@ input[type="email"] {
 .footer-single-option {
   font-style: "Poppins", sans-serif;
   text-transform: capitalize;
+  padding: 0 2px;
 }
 .footer-single-icon {
-  margin-right: 1rem;
+  margin-right: 2rem;
+  font-size: 1.1rem;
 }
-
+.footer-single-icon:hover{
+  color: var(--primaryColor);
+  cursor: pointer;
+}
+.footer-rigths{
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+.footer-single-option{
+  color: var(--mainWhite);
+}
+.footer-single-option:hover{
+  color:var(--primaryColor);
+  text-decoration: underline;
+}
+.footer-rigths-text{
+  display: inline;
+}
+.footer-rigths-subtext{
+  color: var(--primaryColor);
+  display: inline;
+}
 /* ---------------------end of footer------------------------ */
