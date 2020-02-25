@@ -34,7 +34,7 @@ body {
   font-size: 1rem;
 }
 
-img {
+img:not(.nav-logo) {
   width: 100%;
   display: block;
 }
@@ -111,16 +111,16 @@ a {
 
 /* -------------------- start of  nav css --------------------- */
 
-.nav {
-  position:relative;
+/* .nav {
+  position: relative;
   z-index: 1;
 }
-.nav-container{
-  background: rgb(221, 221, 221,0.8);
+.nav-container {
+  background: var(--primaryColor);
   position: fixed;
   width: 100%;
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
 .nav-text {
   display: inline-block;
@@ -129,13 +129,63 @@ a {
   font-weight: 500;
   color: var(--mainBlack);
 }
-.nav-text:hover{
-  color:var(--primaryColor);
+.nav-text:hover {
+  color: var(--primaryColor);
   text-decoration: underline;
+} */
+.nav {
+  background: var(--offWhite);
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--primaryColor);
+  font-size: 1.2rem;
+  transition: var(--mainTransition);
+}
+
+.nav-toggle:hover {
+  font-size: 1.6rem;
+}
+
+.nav-icons-container {
+  display: none;
+}
+.nav-text {
+  display: block;
+  text-transform: capitalize;
+  color: var(--mainBlack);
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+@media screen and (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-container {
+    display: flex;
+  }
+  .nav-options {
+    display: flex;
+    width: auto;
+  }
+  .nav-icons-container {
+    display: flex;
+  }
 }
 
 /* -------------------- end of  nav css --------------------- */
-
 
 /* -------------------- start of  hero css --------------------- */
 
@@ -463,25 +513,25 @@ input[type="email"] {
   margin-right: 2rem;
   font-size: 1.1rem;
 }
-.footer-single-icon:hover{
+.footer-single-icon:hover {
   color: var(--primaryColor);
   cursor: pointer;
 }
-.footer-rigths{
+.footer-rigths {
   text-transform: capitalize;
   letter-spacing: 3px;
 }
-.footer-single-option{
+.footer-single-option {
   color: var(--mainWhite);
 }
-.footer-single-option:hover{
-  color:var(--primaryColor);
+.footer-single-option:hover {
+  color: var(--primaryColor);
   text-decoration: underline;
 }
-.footer-rigths-text{
+.footer-rigths-text {
   display: inline;
 }
-.footer-rigths-subtext{
+.footer-rigths-subtext {
   color: var(--primaryColor);
   display: inline;
 }
