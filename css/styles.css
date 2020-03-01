@@ -110,29 +110,6 @@ a {
 /* -------------------- start of  header css --------------------- */
 
 /* -------------------- start of  nav css --------------------- */
-
-/* .nav {
-  position: relative;
-  z-index: 1;
-}
-.nav-container {
-  background: var(--primaryColor);
-  position: fixed;
-  width: 100%;
-  text-align: center;
-  padding: 1rem 0;
-}
-.nav-text {
-  display: inline-block;
-  margin: 0 2rem;
-  text-transform: capitalize;
-  font-weight: 500;
-  color: var(--mainBlack);
-}
-.nav-text:hover {
-  color: var(--primaryColor);
-  text-decoration: underline;
-} */
 .nav {
   background: var(--offWhite);
 }
@@ -151,6 +128,7 @@ a {
   color: var(--primaryColor);
   font-size: 1.2rem;
   transition: var(--mainTransition);
+  cursor: pointer;
 }
 
 .nav-toggle:hover {
@@ -167,14 +145,21 @@ a {
   font-weight: bold;
   padding: 1rem 2.5rem;
   letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+.nav-text:hover{
+  background: var(--darkGrey);
+  color: var(--primaryColor);
+  padding-left: 3rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .nav-toggle {
     display: none;
   }
   .nav-container {
     display: flex;
+    flex-wrap: wrap;
   }
   .nav-options {
     display: flex;
@@ -182,6 +167,9 @@ a {
   }
   .nav-icons-container {
     display: flex;
+  }
+  .nav-icons-container{
+    padding: 1rem 2.5rem;
   }
 }
 
