@@ -111,7 +111,7 @@ a {
 
 /* -------------------- start of  nav css --------------------- */
 .nav {
-  background: var(--offWhite);
+  background: var(--mainGrey);
 }
 
 .nav-header {
@@ -146,6 +146,7 @@ a {
   padding: 1rem 2.5rem;
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
+  font-style: "Poppins", sans-serif;
 }
 .nav-text:hover{
   background: var(--darkGrey);
@@ -158,18 +159,53 @@ a {
     display: none;
   }
   .nav-container {
+    max-width: 1170px;
+    margin:0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-  }
-  .nav-options {
-    display: flex;
-    width: auto;
+    padding: 0.7rem 2rem;
   }
   .nav-icons-container {
     display: flex;
   }
-  .nav-icons-container{
-    padding: 1rem 2.5rem;
+  .nav-options {
+    display: flex;
+  }
+  .nav-text {
+    display: block;
+    text-transform: capitalize;
+    color: var(--mainBlack);
+    font-weight: bold;
+    padding: 0;
+    letter-spacing: var(--mainSpacing);
+    transition: var(--mainTransition);
+    margin :0 1rem;
+  }
+
+  .nav-text:hover{
+    background: transparent;
+    color: var(--primaryColor);
+    padding-left: 0;
+  }
+ 
+  .nav-single-icon{
+    color:var(--primaryColor);
+    margin :0 1rem;
+    transition: var(--mainTransition);
+  }
+
+  .nav-single-icon:hover{
+    color:var(--darkGrey);
+    transform: translateY(-10%)
+  }
+
+  .nav-header{
+    padding: 0;
+  }
+  .nav-text {
+    padding: 0;
   }
 }
 
