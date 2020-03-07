@@ -165,7 +165,7 @@ a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0.7rem 2rem;
+    padding: 0.5rem 3rem;
   }
   .nav-icons-container {
     display: flex;
@@ -181,7 +181,7 @@ a {
     padding: 0;
     letter-spacing: var(--mainSpacing);
     transition: var(--mainTransition);
-    margin :0 1rem;
+    margin :0 0.5rem;
   }
 
   .nav-text:hover{
@@ -192,7 +192,7 @@ a {
  
   .nav-single-icon{
     color:var(--primaryColor);
-    margin :0 1rem;
+    margin :0 0.5rem;
     transition: var(--mainTransition);
   }
 
@@ -214,7 +214,7 @@ a {
 /* -------------------- start of  hero css --------------------- */
 
 .hero {
-  min-height: 100vh;
+  min-height: calc( 100vh - 42px);
   background: var(--primaryColor);
   display: flex;
   justify-content: center;
