@@ -118,7 +118,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
 }
 
 .nav-toggle {
@@ -154,6 +154,15 @@ a {
   padding-left: 3rem;
 }
 
+.nav-options{
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+}
+.show-nav-options{
+  height: 270px;
+}
+
 @media screen and (min-width: 992px) {
   .nav-toggle {
     display: none;
@@ -172,6 +181,7 @@ a {
   }
   .nav-options {
     display: flex;
+    height: auto;
   }
   .nav-text {
     display: block;
@@ -211,10 +221,24 @@ a {
 
 /* -------------------- end of  nav css --------------------- */
 
+/* ---------------------start of fixed css -------------------*/
+
+.fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background: var(--mainGrey);
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+}
+
+/* ---------------------end of fixed css -------------------- */
+
 /* -------------------- start of  hero css --------------------- */
 
 .hero {
-  min-height: calc( 100vh - 42px);
+  min-height: calc( 100vh - 46px);
   background: var(--primaryColor);
   display: flex;
   justify-content: center;
