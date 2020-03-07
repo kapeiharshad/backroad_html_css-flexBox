@@ -2,9 +2,9 @@
 
 /* -------------------- global css started --------------------- */
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 :root {
   --primaryColor: #3fd0d4;
@@ -208,7 +208,8 @@ a {
 
   .nav-single-icon:hover{
     color:var(--darkGrey);
-    transform: translateY(-10%)
+    transform: translateY(-10%);
+    cursor: pointer;
   }
 
   .nav-header{
