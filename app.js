@@ -32,12 +32,13 @@ scrollLinks.forEach(link => {
   link.addEventListener("click", e => {
     e.preventDefault();
     links.classList.remove("show-nav-options");
-    const id = e.target.getAttribute("href").slice(1);
+    const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
     let position;
     if (navbar.classList.contains("fixed")) {
       position = element.offsetTop - 51;
     } else {
+      // for initial position of nav bar 100 px is for random
       position = element.offsetTop - 100;
     }
 
