@@ -1,4 +1,3 @@
 # backroad_html_css-flexBox
-It is only a html and css project mainly based on css flex box system 
-
+This is a static website which used only html and css.
 ## To visit site go to https://kapeitours.netlify.app
